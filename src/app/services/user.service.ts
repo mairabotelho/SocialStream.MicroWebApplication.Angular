@@ -34,8 +34,7 @@ export class UserService {
     this.localStorageService.clear('username');
   }
   
-
-  // findAll(){
-  //   return this.http.get<User[]>('/server/users');
-  // }
+  findAll(){
+    return this.http.get<User[]>('/server/users');
+  }
 }
