@@ -7,6 +7,7 @@
         <div class="col-md-6">
           <div *ngIf="userService.isAuthenticated()">
             <button class="logout btn btn-default" (click)="logout()">Logout</button>
+            <a href="/upload" class="register btn btn-default">Add video</a>
           </div>
           <div *ngIf="!userService.isAuthenticated()">
           <a href="/login" class="login btn btn-default">Login</a>
