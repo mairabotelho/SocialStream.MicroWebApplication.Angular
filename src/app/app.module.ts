@@ -11,6 +11,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HomeComponent } from './components/home/home.component';
 import { VideoFormComponent } from './video-form/video-form.component';
+import { AccountComponent } from './components/account/account.component';
+import { UserService } from './services/user.service';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,9 @@ import { VideoFormComponent } from './video-form/video-form.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    VideoFormComponent
+    VideoFormComponent,
+    AccountComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +34,7 @@ import { VideoFormComponent } from './video-form/video-form.component';
     ReactiveFormsModule,
     NgxWebstorageModule.forRoot(),
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
