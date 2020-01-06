@@ -1,0 +1,29 @@
+<div>
+        <!-- <app-video-page></app-video-page>
+        <div class="container">
+            <div class="row">
+                <div *ngFor="let video of videos">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-text">{{ video.videoName }}</h3>
+                            <p class="card-text">
+                               Description: {{ video.videoDescription }} | Location: {{ mural.location }} | Genre: {{ mural.genre }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <div>
+        <video videoId= "video-Page" height="350" width="500" autoplay="autoplay" controls>
+           <source src="https://www.youtube.com/watch?v=usO_6-RuCrg" type='video/mp4'>
+            <!-- <source src="{{ video.location }}"> -->
+        </video>
+    </div>
+    <div><h2>{{video.videoName}}</h2></div>
+    <div>
+        <p>
+            {{ video.videoDescription  }}<br>
+        </p>
+    </div>
+</div>
