@@ -15,8 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'upload', component: VideoFormComponent},
   { path: 'homepage', component: HomepageComponent},
-  { path: 'video-page', component: VideoPageComponent}
-
+  { path: 'video-page/:videoId', component: VideoPageComponent},
   { path: 'users', component: AccountComponent },
 ];
 
