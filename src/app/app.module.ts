@@ -10,6 +10,12 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HomeComponent } from './components/home/home.component';
+import { VideoFormComponent } from './video-form/video-form.component';
+import { AccountComponent } from './components/account/account.component';
+import { UserService } from './services/user.service';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { VideoPageComponent } from './video-page/video-page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +23,12 @@ import { HomeComponent } from './components/home/home.component';
     HeaderComponent,
     LoginComponent,
     SignupComponent,
-    HomeComponent
+    HomeComponent,
+    VideoFormComponent,
+    AccountComponent,
+    HomepageComponent,
+    VideoPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -27,7 +38,8 @@ import { HomeComponent } from './components/home/home.component';
     ReactiveFormsModule,
     NgxWebstorageModule.forRoot(),
   ],
-  providers: [],
+
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

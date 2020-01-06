@@ -1,0 +1,21 @@
+<form (ngSubmit)="onSubmit()" #videoForm="ngForm">
+    <div class="form-group">
+        <label for="name" style="color:white;">Video Name</label>
+        <input type="text" [(ngModel)]="video.videoName"
+                class="form-control" id="name" name="name" placeholder="Enter in Video Name."
+                required #name="ngModel">
+    </div>
+    <div class="form-group">
+        <label for="description" style="color:white;">Video Description</label>
+        <textarea type="text" [(ngModel)]="video.videoDescription"
+                class="form-control" id="description" name="description" 
+                rows="6"
+                placeholder="Please enter a description for this video"
+                required #description="ngModel">
+        </textarea>
+    </div>
+    <div>
+        <input (change)="onFileChange($event)" type="file" name="fileUpload" id="fileUpload">
+        <button type="submit" [disabled]="!videoForm.form.valid" class="btn btn-info">Submit!</button> 
+    </div>
+</form>
