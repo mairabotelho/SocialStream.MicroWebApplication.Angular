@@ -6,6 +6,7 @@ import { HomeComponent } from './components/home/home.component';
 import { VideoFormComponent } from './video-form/video-form.component';
 import { AccountComponent } from './components/account/account.component';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { VideoPageComponent } from './video-page/video-page.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'upload', component: VideoFormComponent},
   { path: 'homepage', component: HomepageComponent},
+  { path: 'video-page', component: VideoPageComponent}
 
   { path: 'users', component: AccountComponent },
 ];

@@ -14,6 +14,7 @@ import { VideoFormComponent } from './video-form/video-form.component';
 import { AccountComponent } from './components/account/account.component';
 import { UserService } from './services/user.service';
 import { HomepageComponent } from './components/homepage/homepage.component';
+import { VideoPageComponent } from './video-page/video-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { HomepageComponent } from './components/homepage/homepage.component';
     HomeComponent,
     VideoFormComponent,
     AccountComponent,
-    HomepageComponent
+    HomepageComponent,
+    VideoPageComponent
   ],
   imports: [
     BrowserModule,
