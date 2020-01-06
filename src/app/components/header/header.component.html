@@ -27,13 +27,15 @@
           <a class="nav-link" href="/home" style="float: right;">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/signup">Register</a>
+          <a class="nav-link" href="/signup" *ngIf="!userService.isAuthenticated()">Register</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/login">Login</a>
+          <a class="nav-link" href="/login" *ngIf="!userService.isAuthenticated()">Login</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/logout"*ngIf="userService.isAuthenticated()">Log Out</a>
+      </li>
       </ul>
     </div>
   </nav>
-
 
