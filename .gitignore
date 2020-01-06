@@ -55,3 +55,8 @@ e2e/*.map
 
 #System Files
 .DS_Store/
+<<<<<<< HEAD
+node_modules
+
+=======
+>>>>>>> c00ce96c5eb28ce63cc0556874b60636050483a3

@@ -14,6 +14,7 @@ const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'home', component: HomeComponent },
   { path: 'upload', component: VideoFormComponent},
+  { path: 'video-page/:videoId', component: VideoPageComponent},
   { path: 'homepage', component: HomepageComponent},
   { path: 'video-page/:videoId', component: VideoPageComponent},
   { path: 'users', component: AccountComponent },

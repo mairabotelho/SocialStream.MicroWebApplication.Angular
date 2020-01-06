@@ -38,6 +38,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ReactiveFormsModule,
     NgxWebstorageModule.forRoot(),
   ],
+
   providers: [UserService],
   bootstrap: [AppComponent]
 })

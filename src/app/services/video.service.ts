@@ -25,5 +25,4 @@ export class VideoService {
     return this.http.get<Video>(this.videoURL + '/' + videoId);
   } 
 
-
 }
