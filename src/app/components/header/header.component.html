@@ -1,9 +1,9 @@
-<div class="header">
+<!-- <div class="header">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <h1><a href="" class="title">socialStream</a></h1>      
-        </div> <!-- Title -->
+          <h1><a href="" class="title"><img src="assets/img/output-onlinepngtools.png" height="100px" width="100px">socialStream</a></h1>      
+        </div> 
         <div class="col-md-6">
           <div *ngIf="userService.isAuthenticated()">
             <button class="logout btn btn-default" (click)="logout()">Logout</button>
@@ -14,4 +14,26 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#"><img src="assets/img/output-onlinepngtools.png" height="50px" width="50px">Social Stream</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="/home" style="float: right;">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/signup">Register</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login">Login</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
