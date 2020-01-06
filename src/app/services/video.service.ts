@@ -11,12 +11,12 @@ export class VideoService {
   }
 
   upload(video: Video, file: File){
+    console.log(video.videoName + ' ' + video.videoDescription);
     const formData: FormData = new FormData();
     formData.append('file', file);
-    formData.append('name', video.videoName);
-    formData.append('description', video.videoDescription);
-    formData.append('userId', video.userId.toString());
-    this.http.post<Video>(this.videoURL, formData);
+    formData.append('videoName', video.videoName);
+    formData.append('videoDescription', video.videoDescription);
+    return this.http.post<FormData>(this.videoURL, formData);
   }
 
 

@@ -14,7 +14,7 @@ export class UserService {
   }
 
   singup(user: User) {
-    this.http.post('/server/signup', user);
+    return this.http.post('/server/signup', user);
   }
 
   login(login: Login): Observable<boolean> {
