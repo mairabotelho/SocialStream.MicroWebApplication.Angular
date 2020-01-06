@@ -7,6 +7,4 @@ export class Video {
   userId: number;
   comments: Comment[];
   location: string;
-//filepath: string;
-//file: File;
 }
