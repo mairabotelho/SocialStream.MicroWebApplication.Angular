@@ -11,6 +11,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HomeComponent } from './components/home/home.component';
 import { VideoFormComponent } from './video-form/video-form.component';
+import { VideoPageComponent } from './video-page/video-page.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { VideoFormComponent } from './video-form/video-form.component';
     LoginComponent,
     SignupComponent,
     HomeComponent,
-    VideoFormComponent
+    VideoFormComponent,
+    VideoPageComponent
   ],
   imports: [
     BrowserModule,
