@@ -7,9 +7,6 @@
         <div class="col-md-6">
           <div *ngIf="userService.isAuthenticated()">
             <button class="logout btn btn-default" (click)="logout()">Logout</button>
-            <!-- <a href="/home" class="account btn btn-default">My Account</a>
-            <a href="/movies" class="movie btn btn-default">My Movies</a>
-            <a href="/searchmovie" class="add btn btn-default">Add Movie</a> -->
           </div>
           <div *ngIf="!userService.isAuthenticated()">
           <a href="/login" class="login btn btn-default">Login</a>

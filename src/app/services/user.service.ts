@@ -13,7 +13,7 @@ export class UserService {
   constructor(private http: HttpClient, private localStorageService: LocalStorageService) {
   }
 
-  singup(user: User): Observable<any> {
+  singup(user: User) {
     return this.http.post('/server/signup', user);
   }
 
