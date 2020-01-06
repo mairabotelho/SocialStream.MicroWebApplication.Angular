@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-signup',
@@ -38,7 +39,7 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit() {
+  onSubmit(){
     this.user.username = this.signupForm.get('username').value;
     this.user.firstName = this.signupForm.get('firstName').value;
     this.user.lastName = this.signupForm.get('lastName').value;

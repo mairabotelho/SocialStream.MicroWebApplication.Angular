@@ -1,11 +1,11 @@
 .header{
     padding: 5xp, 20xp;
     padding-top: 10px;
-    background: rgb(210, 210, 224);
+    background: black;
 }
 
 .title{
-    color:black;
+    color:aliceblue;
     text-decoration: none;
     font-family: BlinkMacSystemFont, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -13,5 +13,6 @@
 .login, .register, .logout{
     float: right;
     text-decoration: none;
-    color: black;
+    color: aliceblue;
+    
 }
