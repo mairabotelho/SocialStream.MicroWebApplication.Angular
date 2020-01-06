@@ -10,6 +10,7 @@ import { LoginComponent } from './components/login/login.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NgxWebstorageModule } from 'ngx-webstorage';
 import { HomeComponent } from './components/home/home.component';
+val_frontend
 import { VideoFormComponent } from './video-form/video-form.component';
 import { AccountComponent } from './components/account/account.component';
 import { UserService } from './services/user.service';
@@ -17,18 +18,24 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { VideoPageComponent } from './video-page/video-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 
+master
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     LoginComponent,
     SignupComponent,
+val_frontend
     HomeComponent,
     VideoFormComponent,
     AccountComponent,
     HomepageComponent,
     VideoPageComponent,
     FooterComponent
+
+    HomeComponent
+master
   ],
   imports: [
     BrowserModule,

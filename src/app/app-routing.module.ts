@@ -9,6 +9,7 @@ import { HomepageComponent } from './components/homepage/homepage.component';
 import { VideoPageComponent } from './video-page/video-page.component';
 
 
+
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
@@ -18,6 +19,8 @@ const routes: Routes = [
   { path: 'homepage', component: HomepageComponent},
   { path: 'video-page/:videoId', component: VideoPageComponent},
   { path: 'users', component: AccountComponent },
+
+  { path: 'home', component: HomeComponent }
 ];
 
 @NgModule({
