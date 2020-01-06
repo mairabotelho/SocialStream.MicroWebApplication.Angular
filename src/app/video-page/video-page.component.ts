@@ -17,6 +17,7 @@ export class VideoPageComponent implements OnInit {
   ngOnInit() {
     this.getVideo();
   }
+
  getVideo(){
    const videoId = +this.route.snapshot.paramMap.get('videoId');
    this.videoService.getVideo(videoId).subscribe(video => this.video = video);
