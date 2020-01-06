@@ -1,12 +1,12 @@
 <form (ngSubmit)="onSubmit()" #videoForm="ngForm">
     <div class="form-group">
-        <label for="name">Video Name</label>
+        <label for="name" style="color:white;">Video Name</label>
         <input type="text" [(ngModel)]="video.videoName"
                 class="form-control" id="name" name="name" placeholder="Enter in Video Name."
                 required #name="ngModel">
     </div>
     <div class="form-group">
-        <label for="description">Video Description</label>
+        <label for="description" style="color:white;">Video Description</label>
         <textarea type="text" [(ngModel)]="video.videoDescription"
                 class="form-control" id="description" name="description" 
                 rows="6"
