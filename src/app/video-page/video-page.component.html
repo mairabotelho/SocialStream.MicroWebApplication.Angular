@@ -1,6 +1,6 @@
 <div *ngIf="video">
-<div>
-        <!-- <app-video-page></app-video-page>
+<!-- <div>
+        <app-video-page></app-video-page>
         <div class="container">
             <div class="row">
                 <div *ngFor="let video of videos">
@@ -18,7 +18,7 @@
     <div>
         <video videoId= "video-Page" height="350" width="500" autoplay="autoplay" controls>
 
-           <source src="https://www.youtube.com/watch?v=usO_6-RuCrg" type='video/mp4'>
+           <source src="{{ video.location }}"type='video/mp4'>
             <!-- <source src="{{ video.location }}"> -->
         </video>
     </div>
