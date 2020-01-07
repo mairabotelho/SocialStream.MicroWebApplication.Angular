@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'video-page/:videoId', component: VideoPageComponent},
   { path: 'homepage', component: HomepageComponent},
   { path: 'video-page/:videoId', component: VideoPageComponent},
-  { path: 'users', component: AccountComponent },
+  { path: 'account', component: AccountComponent },
 ];
 
 @NgModule({
