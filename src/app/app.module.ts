@@ -28,7 +28,8 @@ import { FooterComponent } from './components/footer/footer.component';
     AccountComponent,
     HomepageComponent,
     VideoPageComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
