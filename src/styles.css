@@ -22,5 +22,5 @@ html{
 body{
   background-image: url("src/assets/img/night-city-in-neon-art_3960x2228_xtrafondos.com.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }

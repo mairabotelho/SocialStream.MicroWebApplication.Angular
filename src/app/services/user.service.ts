@@ -6,9 +6,12 @@ import { LocalStorageService } from 'ngx-webstorage';
 import { map } from 'rxjs/operators';
 import { Login } from '../models/login';
 import { JwtAuthResponse } from '../models/jwt-auth-response';
+import { stringify } from 'querystring';
 
 @Injectable({providedIn: 'root'})
 export class UserService {
+
+  username: string;
 
   constructor(private http: HttpClient, private localStorageService: LocalStorageService) {
   }
