@@ -20,9 +20,9 @@ export class VideoService {
     formData.append('videoDescription', video.videoDescription);
     return this.http.post<FormData>(this.videoURL, formData);
   }
-  public getVideo(videoId: number): Observable<Video>{
-    return this.http.get<Video>(this.videoURL + videoId);
-  } 
 
+  public getVideo(videoId: number): Observable<Video>{
+    return this.http.get<Video>(this.videoURL + '/' + videoId);
+  } 
 
 }
