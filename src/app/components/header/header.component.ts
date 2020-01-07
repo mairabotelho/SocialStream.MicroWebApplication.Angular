@@ -10,6 +10,8 @@ import { User } from 'src/app/models/user';
 })
 export class HeaderComponent implements OnInit {
 
+  user: User;
+
   constructor(private userService: UserService, private router: Router) {
   }
 
