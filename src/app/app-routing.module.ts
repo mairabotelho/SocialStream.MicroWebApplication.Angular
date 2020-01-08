@@ -12,7 +12,7 @@ import { VideoPageComponent } from './video-page/video-page.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
   { path: 'upload', component: VideoFormComponent},
   { path: 'video-page/:videoId', component: VideoPageComponent},
   { path: 'homepage', component: HomepageComponent},
