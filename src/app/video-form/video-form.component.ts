@@ -7,8 +7,8 @@ import { VideoService } from '../services/video.service';
   styleUrls: ['./video-form.component.css']
 })
 export class VideoFormComponent implements OnInit {
-private video: Video;
-private file: File;
+video: Video;
+file: File;
   constructor(private videoService: VideoService) {
     this.video = new Video();
    }
