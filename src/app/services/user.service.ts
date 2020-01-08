@@ -7,21 +7,24 @@ import { map } from 'rxjs/operators';
 import { Login } from '../models/login';
 import { JwtAuthResponse } from '../models/jwt-auth-response';
 import { stringify } from 'querystring';
+import { environment } from 'src/environments/environment';
 
 @Injectable({providedIn: 'root'})
 export class UserService {
 
   username: string;
+  private url: string;
 
   constructor(private http: HttpClient, private localStorageService: LocalStorageService) {
+    this.url = environment.url;
   }
 
   singup(user: User) {
-    return this.http.post('/server/signup', user);
+    return this.http.post(this.url + '/signup', user);
   }
 
   login(login: Login): Observable<boolean> {
-    return this.http.post<JwtAuthResponse>('/server/login', login).pipe(map(data => {
+    return this.http.post<JwtAuthResponse>(this.url + '/login', login).pipe(map(data => {
       this.localStorageService.store('authenticationToken', data.authenticationToken);
       this.localStorageService.store('username', data.username);
       return true;
