@@ -8,6 +8,7 @@ import { Login } from '../models/login';
 import { JwtAuthResponse } from '../models/jwt-auth-response';
 import { stringify } from 'querystring';
 import { environment } from 'src/environments/environment';
+import {UserPayload} from '../components/signup/user-payload';
 
 @Injectable({providedIn: 'root'})
 export class UserService {
@@ -19,8 +20,8 @@ export class UserService {
     this.url = environment.url;
   }
 
-  singup(user: User) {
-    return this.http.post(this.url + '/signup', user);
+  singup(userPayload: UserPayload) {
+    return this.http.post(this.url + '/signup', userPayload);
   }
 
   login(login: Login): Observable<boolean> {

@@ -32,7 +32,7 @@
             <a class="nav-link" href="/home" *ngIf="!isAuthenticated()" style="font-size: small;">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/signup" *ngIf="!isAuthenticated()" style="font-size: small;">Register </a>
+            <a routerLink="signup" *ngIf="!isAuthenticated()" style="font-size: small;">Register </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="/login" *ngIf="!isAuthenticated()" style="font-size: small;">Login</a>
@@ -41,10 +41,10 @@
             <a class="nav-link" href="/account" *ngIf="!isAuthenticated()" style="font-size: small;"> My Account </a>
          </li>
           <li class="nav-item">
-            <a class="nav-link" href="/upload" *ngIf="!isAuthenticated()" style="font-size: small;">Add Video </a>
+            <a class="nav-link" href="/upload" *ngIf="isAuthenticated()" style="font-size: small;">Add Video </a>
          </li>
          <li class="nav-item">
-          <a class="nav-link" href="/video-page/1" *ngIf="!isAuthenticated()" style="font-size: small;">Watch Videos </a>
+          <a class="nav-link" href="/video-page/1" *ngIf="isAuthenticated()" style="font-size: small;">Watch Videos </a>
        </li>
           <li class="nav-item">
             <a class="nav-link" href="/home" *ngIf="!isAuthenticated()" (click)="logout()" style="font-size: small;">Log Out</a>
