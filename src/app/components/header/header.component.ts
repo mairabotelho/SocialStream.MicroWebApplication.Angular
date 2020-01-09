@@ -13,9 +13,8 @@ export class HeaderComponent implements OnInit {
 
   user: User;
 
-  constructor(private userService: UserService, private router: Router, private localStorageService: LocalStorageService) {}
+  constructor(private userService: UserService, private router: Router) {}
 
-  currentUsername = this.localStorageService.retrieve('username');
 
   ngOnInit() {
   }
