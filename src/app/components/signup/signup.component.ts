@@ -4,6 +4,8 @@ import { User } from 'src/app/models/user';
 import { UserService } from 'src/app/services/user.service';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
+import {UserPayload} from './user-payload';
+
 
 @Component({
   selector: 'app-signup',
@@ -12,7 +14,7 @@ import { Observable } from 'rxjs';
 })
 export class SignupComponent implements OnInit {
   signupForm: FormGroup;
-  user: User;
+  userPayload: UserPayload;
 
   constructor(private formBuilder: FormBuilder, private userService: UserService,
      private router: Router) {
@@ -26,13 +28,12 @@ export class SignupComponent implements OnInit {
       confirmPassword: ''
     });
 
-    this.user = {
+    this.userPayload = {
       username: '',
       firstName: '',
       lastName:'',
       emailAddress: '',
-      password: '',
-      confirmPassword: ''
+      password: ''
     };
   }
 
@@ -40,14 +41,13 @@ export class SignupComponent implements OnInit {
   }
 
   onSubmit(){
-    this.user.username = this.signupForm.get('username').value;
-    this.user.firstName = this.signupForm.get('firstName').value;
-    this.user.lastName = this.signupForm.get('lastName').value;
-    this.user.emailAddress = this.signupForm.get('emailAddress').value;
-    this.user.password = this.signupForm.get('password').value;
-    this.user.confirmPassword = this.signupForm.get('confirmPassword').value;
+    this.userPayload.username = this.signupForm.get('username').value;
+    this.userPayload.firstName = this.signupForm.get('firstName').value;
+    this.userPayload.lastName = this.signupForm.get('lastName').value;
+    this.userPayload.emailAddress = this.signupForm.get('emailAddress').value;
+    this.userPayload.password = this.signupForm.get('password').value;
 
-    this.userService.singup(this.user).subscribe(data => {
+    this.userService.singup(this.userPayload).subscribe(data => {
       console.log('User created');
       alert("User created successfully.");
       this.router.navigateByUrl('/login');
