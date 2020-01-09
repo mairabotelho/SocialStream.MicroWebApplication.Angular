@@ -10,7 +10,7 @@ export class HomepageComponent implements OnInit {
 
   constructor(private localStorageService: LocalStorageService) {}
 
-  currentUsername = this.localStorageService.retrieve('username');
+
 
   ngOnInit() {
   }
