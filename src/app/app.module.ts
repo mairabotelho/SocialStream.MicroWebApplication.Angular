@@ -15,7 +15,6 @@ import { AccountComponent } from './components/account/account.component';
 import { UserService } from './services/user.service';
 import { HomepageComponent } from './components/homepage/homepage.component';
 import { VideoPageComponent } from './video-page/video-page.component';
-import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +27,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AccountComponent,
     HomepageComponent,
     VideoPageComponent,
-    FooterComponent,
-
   ],
   imports: [
     BrowserModule,
