@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  url: 'https://https://socialstreamapp.herokuapp.com/'
+  url: 'https://socialstreamapp.herokuapp.com'
 };
