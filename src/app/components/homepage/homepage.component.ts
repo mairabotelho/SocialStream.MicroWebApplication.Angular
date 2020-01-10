@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 export class HomepageComponent implements OnInit {
 
   videos: Video[];
-  videoId: string;
+  videoName: string;
 
   constructor(private localStorageService: LocalStorageService, private videoService: VideoService,
     private router: Router) {}
@@ -28,7 +28,7 @@ export class HomepageComponent implements OnInit {
   }
 
   search(){
-    this.router.navigateByUrl('/video-page/' + this.videoId);
+    this.router.navigateByUrl('/video-page/' + this.videoName);
   }
 
 }

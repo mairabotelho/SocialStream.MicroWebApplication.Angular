@@ -1,7 +1,25 @@
 <div class="col-md-2">
-<a class="user">Hello, {{currentUsername}}! </a></div><br><br>
+<h1 class="user">Hello, {{currentUsername}}! </h1></div><br><br>
 
-<h1><a class="title"> Search for video</a></h1>
-  <div class="search">
-   <input [(ngModel)]="videoId"/><button (click)="search()">Search</button>
-  </div>
+  <div class="row">
+      <div class="column">
+        <div class="search">
+            <h2 class="title"> Stream video</h2>
+                <input [(ngModel)]="videoName"/>
+                <button class="btn btn-lg btn-primary" (click)="search()">Go!</button>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card"><div class="col-md-40">
+            <h2> Videostream</h2>
+            <table class="table table-striped">
+                <tbody>
+                    <tr *ngFor="let video of videos">
+                      <td><span class="badge">{{video.videoName}}</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            </div></div>
+      </div>
+
+      </div>
