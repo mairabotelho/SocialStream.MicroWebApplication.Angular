@@ -1,6 +1,20 @@
 .jumbotron{
-    margin-left: 200px;
-    margin-right: 200px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 50px;
+    margin-bottom: 70px;
     position: center;
+}
 
+.display{
+    font-size: 60px; 
+    text-align: center;   
+}
+
+.lead, .my{
+    text-align: center;
+}
+
+.btn{
+    text-align: center;
 }

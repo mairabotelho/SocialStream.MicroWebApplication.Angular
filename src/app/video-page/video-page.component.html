@@ -1,31 +1,11 @@
 <div *ngIf="video">
-<div>
-        <!-- <app-video-page></app-video-page>
-        <div class="container">
-            <div class="row">
-                <div *ngFor="let video of videos">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-text">{{ video.videoName }}</h3>
-                            <p class="card-text">
-                               Description: {{ video.videoDescription }} | Location: {{ mural.location }} | Genre: {{ mural.genre }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-    <div>
-        <video videoId= "video-Page" height="350" width="500" autoplay="autoplay" controls>
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title"> {{video.videoName}}</h5>
+            <video id="video-page" height="350" width="500" autoplay="autoplay" controls>
+                <source src="{{video.location}}"type='video/mp4'></video>
+            <p class="card-text">{{ video.videoDescription  }} </p></div>
+        <div class="card-footer">
+        </div>
+    </div>
 
-           <source src="https://www.youtube.com/watch?v=usO_6-RuCrg" type='video/mp4'>
-            <!-- <source src="{{ video.location }}"> -->
-        </video>
-    </div>
-    <div><h2>{{video.videoName}}</h2></div>
-    <div>
-        <p>
-            {{ video.videoDescription  }}<br>
-        </p>
-    </div>
-</div>
