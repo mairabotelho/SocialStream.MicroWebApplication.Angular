@@ -42,6 +42,6 @@ export class UserService {
   }
   
   findAll(){
-    return this.http.get<User[]>('/server/users');
+    return this.http.get<User[]>( this.url + '/users');
   }
 }
