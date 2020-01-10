@@ -26,7 +26,7 @@ export class VideoService {
   } 
 
   public getAllVideos(){
-    return this.http.get<Video[]>('/videos');
+    return this.http.get<Video[]>(this.videoURL);
   }
 
 }

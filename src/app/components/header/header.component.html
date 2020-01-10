@@ -16,16 +16,16 @@
             <a class="nav-link" routerLink="signup" *ngIf="!isAuthenticated()" style="font-size: small">Register </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/login" *ngIf="!isAuthenticated()" style="font-size: small">Login</a>
+            <a class="nav-link" routerLink="login" *ngIf="!isAuthenticated()" style="font-size: small">Login</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/upload" *ngIf="isAuthenticated()" style="font-size: small">Add Video </a>
+            <a class="nav-link" routerLink="upload" *ngIf="isAuthenticated()" style="font-size: small">Add Video </a>
          </li>
          <li class="nav-item">
-          <a class="nav-link" routerLink="/video-page" *ngIf="isAuthenticated()" style="font-size: small">Watch Videos </a>
+          <a class="nav-link" routerLink="video-page" *ngIf="isAuthenticated()" style="font-size: small">Watch Videos </a>
        </li>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/home" *ngIf="isAuthenticated()" (click)="logout()" style="font-size: small">Log Out</a>
+            <a class="nav-link" routerLink="home" *ngIf="isAuthenticated()" (click)="logout()" style="font-size: small">Log Out</a>
         </li>
         </ul>
       </span>
