@@ -1,12 +1,11 @@
-<!-- <div *ngIf="video"> -->
+<div *ngIf="video">
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">{{video.videoName}}</h5>
-            <video videoId= "video-page" height="350" width="500" autoplay="autoplay" controls>
-                <source src="{{ video.location }}"type='video/mp4'></video>
-            <p class="card-text">{{ video.videoDescription  }}</p></div>
+            <h5 class="card-title"> {{video.videoName}}</h5>
+            <video id="video-page" height="350" width="500" autoplay="autoplay" controls>
+                <source src="{{video.location}}"type='video/mp4'></video>
+            <p class="card-text">{{ video.videoDescription  }} </p></div>
         <div class="card-footer">
-            <!-- comments -->
         </div>
     </div>
 

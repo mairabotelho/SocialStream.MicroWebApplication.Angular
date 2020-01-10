@@ -1,36 +1,7 @@
 <div class="col-md-2">
 <a class="user">Hello, {{currentUsername}}! </a></div><br><br>
 
-<tr *ngFor="let video of videos">
-
-</tr>
-  
-
-
-
-        <!-- <div class="container">
-            <div class="row">
-                <div *ngFor="let video of videos">
-                    <div class="card">
-                        <div class="card-body">
-                            <h3 class="card-text">{{ video.videoName }}</h3>
-                            <p class="card-text">
-                               Description: {{ video.videoDescription }}
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">{{video.videoName}}</h5>
-                <p class="card-text">{{video.videoDescription}}</p>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </div>
-            </div>
-        </div> -->
+<h1><a class="title"> Search for video</a></h1>
+  <div class="search">
+   <input [(ngModel)]="videoId"/><button (click)="search()">Search</button>
+  </div>
