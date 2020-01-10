@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { LocalStorageService } from 'ngx-webstorage';
 import { Video } from 'src/app/models/video';
 import { VideoService } from 'src/app/services/video.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-homepage',
@@ -12,8 +13,10 @@ import { VideoService } from 'src/app/services/video.service';
 export class HomepageComponent implements OnInit {
 
   videos: Video[];
+  videoId: string;
 
-  constructor(private localStorageService: LocalStorageService, private videoService: VideoService) {}
+  constructor(private localStorageService: LocalStorageService, private videoService: VideoService,
+    private router: Router) {}
 
   currentUsername = this.localStorageService.retrieve('username');
 
@@ -22,6 +25,10 @@ export class HomepageComponent implements OnInit {
     .subscribe( data => {
       this.videos = data;
     });
+  }
+
+  search(){
+    this.router.navigateByUrl('/video-page/' + this.videoId);
   }
 
 }
